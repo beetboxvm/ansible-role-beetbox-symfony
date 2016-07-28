@@ -1,0 +1,12 @@
+---
+- name: Ensure Symfony Installer is installed.
+  get_url:
+    url: "{{ symfony_installer_url }}"
+    dest: "{{ symfony_bin_path }}"
+    mode: 0755
+
+- name: Create new Symfony project.
+  command: "{{ symfony_bin_path }} new {{ symfony_project_name }} {{ symfony_project_version }}"
+  args:
+    chdir: "{{ beet_root }}"
+    creates: "{{ beet_root }}/{{ symfony_project_name }}"

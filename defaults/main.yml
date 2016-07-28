@@ -1,0 +1,7 @@
+---
+beet_root: "/path/to/project"
+symfony_installer_url: http://symfony.com/installer
+symfony_bin_path: /usr/local/bin/symfony
+symfony_project_create: no
+symfony_project_name: my_project
+symfony_project_version: lts

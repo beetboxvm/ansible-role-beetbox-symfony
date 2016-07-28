@@ -1,0 +1,8 @@
+---
+beet_domain: "symfony.local"
+beet_web: "{{ beet_root }}/{{ symfony_project_name }}"
+role_path: "{{ beet_home }}/provisioning/ansible/roles/beetboxvm.symfony"
+
+beet_project: symfony
+symfony_project_create: yes
+symfony_project_name: beetbox
