@@ -10,3 +10,4 @@
   args:
     chdir: "{{ beet_root }}"
     creates: "{{ beet_root }}/{{ symfony_project_name }}"
+  become: no
